@@ -1,0 +1,75 @@
+/* NAVBAR */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(250, 252, 255);
+  color: #080942;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-brand {
+  margin: 0.3rem !important;
+  padding: 0 !important;
+}
+
+.navbar-brand img {
+  max-width: 64px;
+}
+
+/* SECTION HOME */
+
+.home-section {
+  background-image: url('../images/BG_PC_TEST.jpg');
+  background-size: cover;
+  background-position: right center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+/* SECTION VIMEO */
+
+.showreel-section {
+  height: 100vh;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.video-container iframe {
+  width: 960px;
+  height: 540px;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* SECTION CONTACT */
+.contact-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden; /* Empêche le flou de déborder de la section */
+}
+
+.background-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/BG_PC_TEST.jpg');
+  background-size: cover;
+  background-position: right center;
+  background-attachment: fixed;
+  filter: blur(6px);
+  z-index: -1;
+}

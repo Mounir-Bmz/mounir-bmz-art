@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Mounir Boumaza">
+
+  <link rel="stylesheet" href="public/assets/css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <title>Mounir Art Portfolio</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-transparent">
+    <a class="navbar-brand" href="#">
+      <img src="public/assets/images/june.png" alt="Logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#showreel">Showreel</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#moonlight">Moonlight</a></li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <section id="home" class="home-section">
+    <div class="container-fluid h-100 d-flex align-items-center">
+      <div class="container d-flex justify-content-center align-items-center mainContent">
+        <div class="my-auto text-center">
+          <h2 class="display-5 fw-bold">Mounir Boumaza</h2>
+          <br>
+          <h1 class="display-5 fw-bold">
+            Hello.
+            Let's work together
+            on your next project.
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="showreel" class="showreel-section">
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+      <div>
+        <h2>Animation Demo Reel</h2>
+        <div class="video-container">
+          <iframe src="https://player.vimeo.com/video/659304537?h=69ea53b13c" frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="background-blur"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Contact</h2>
+          <p>Short artist description here.</p>
+        </div>
+        <div class="col-md-6">
+          <form id="contact-form">
+            <h2>Contact</h2>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="First Name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email*" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="4" placeholder="Write a message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="message" class="message-section">
+    <div class="container">
+      <p>Follow along on Instagram for the latest projects and updates.</p>
+    </div>
+  </section>
+
+  <section id="moonlight" class="moonlight-section">
+    <div class="container">
+      <!-- Grid of images here -->
+    </div>
+  </section>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="public/assets/js/script.js"></script>
+<script src="./public/assets/js/transparent_navbar.js"></script>
+
+</html>

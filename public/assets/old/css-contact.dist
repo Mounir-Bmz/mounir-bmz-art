@@ -1,0 +1,30 @@
+/* Styles pour personnaliser les champs de formulaire */
+.custom-form-control {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.custom-form-control input,
+.custom-form-control textarea {
+  border: none;
+  border-bottom: 2px solid #071F4E;
+  background-color: transparent!important;
+  border-radius: 0!important;
+  box-shadow: none!important;
+  transition: border-color 0.2s ease-in-out;
+  width: 100%; /* Utilise toute la largeur disponible */
+  padding: 0.5rem 0; /* Espacement du texte à l'intérieur */
+}
+
+.custom-form-control input:focus,
+.custom-form-control textarea:focus {
+  border-bottom: 1px solid #071F4E;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #536083!important;
+  border: none!important;
+  border-radius: 15px!important;
+  padding: 0.7rem 2rem!important;
+}

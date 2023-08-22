@@ -33,6 +33,10 @@ h1, h2, h3{
   max-width: 64px;
 }
 
+.nav-item{
+  margin : 0 2rem;
+}
+
 /* Logo navbar */
 
 .navbar {
@@ -62,9 +66,9 @@ h1, h2, h3{
   position: relative;
 }
 
-.mainContent{
-  margin-top: 5rem;
-}
+/* .mainContent{
+  margin-top: 2rem;
+} */
 
 .video-container iframe {
   width: 960px;
@@ -116,62 +120,54 @@ h1, h2, h3{
   height: 100vh;
 }
 
+.banner-section{
+  height: 6.7vh;
+  background-image: url('../images/background_art.jpg');
+  background-size: cover;
+  background-position: right center;
+  background-attachment: fixed;
+}
+
 .container-section{
-  padding-top: 4rem;
-  height: 70vh;
+  height: 66.3vh;
   color: #071F4E;
+  margin: 0!important;
+  max-width: none!important;
 }
 
-/* Styles pour personnaliser les champs de formulaire */
-.custom-form-control {
-  position: relative;
-  margin-bottom: 1rem;
+.container-section .row{
+  height: 100%;
 }
 
-.custom-form-control input,
-.custom-form-control textarea {
-  border: none;
-  border-bottom: 2px solid #071F4E;
-  background-color: transparent!important;
-  border-radius: 0!important;
-  box-shadow: none!important;
-  transition: border-color 0.2s ease-in-out;
-  width: 100%; /* Utilise toute la largeur disponible */
-  padding: 0.5rem 0; /* Espacement du texte à l'intérieur */
-}
-
-.custom-form-control input:focus,
-.custom-form-control textarea:focus {
-  border-bottom: 1px solid #071F4E;
-}
-
-.btn-primary {
-  color: #fff;
-  background-color: #536083!important;
-  border: none!important;
-  border-radius: 15px!important;
-  padding: 0.7rem 2rem!important;
+.blocImg{
+  background-image: url('../images/background_art.jpg');
+  background-size: cover;
 }
 
 .bloc{
-  padding: 0 3rem!important;
+  padding: 0rem 5rem!important;
+  font-size: 0.8rem;
+}
+
+.bloc h2{
+  font-size: 1.5rem!important;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
 
   /* Styles pour tablette */
   .bloc{
-    padding: 0 1rem!important;
+    padding: 0 4rem!important;
   }
 }
 
 @media (max-width: 505px) {
   .message-text, .bloc h2{
-    font-size: 1.5rem!important;
+    font-size: 1rem!important;
   }
 
   .bloc p{
-    font-size: 0.8rem!important;
+    font-size: 0.6rem!important;
   }
 }
 
@@ -184,7 +180,7 @@ h1, h2, h3{
 
 .message-section {
   position: relative;
-  height: 30vh;
+  height: 27vh;
   overflow: hidden; /* Empêche le flou de déborder de la section */
   color: #E4A193;
 }

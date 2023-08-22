@@ -62,20 +62,52 @@ h1, h2, h3{
   position: relative;
 }
 
+.mainContent{
+  margin-top: 5rem;
+}
+
 .video-container iframe {
   width: 960px;
-  height: 540px;
+  /* height: 540px; */
   max-height: 100%;
   max-width: 100%;
 }
 
-.title_reel h1, .title_reel h2{
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+/* taille video vimeo */
+
+@media (max-width: 499px) {
+  .home-section h1, .home-section h2 {
+    font-size: 1rem;
+  }
 }
 
-.mainContent{
-  margin-top: 5rem;
+@media (min-width: 500px) and (max-width: 767px) {
+
+  /* Styles pour téléphone */
+  .video-container iframe {
+    height: 320px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* Styles pour tablette */
+  .video-container iframe {
+    height: 420px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  /* Styles pour PC */
+  .video-container iframe {
+    height: 540px;
+  }
+
+  .title_reel h1, .title_reel h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 /* SECTION CONTACT */

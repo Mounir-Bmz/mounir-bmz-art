@@ -13,8 +13,8 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg fixed-top bg-transparent">
-    <a class="navbar-brand" href="#">
+  <nav class="navbar navbar-expand-lg fixed-top bg-transparent navbar-dark">
+    <a class="navbar-brand" href="index.html">
       <img src="public/assets/images/june.png" alt="Logo">
     </a>
 
@@ -49,7 +49,6 @@
               <iframe src="https://player.vimeo.com/video/659304537?h=69ea53b13c" frameborder="0"
                 allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             </div>
-
             <h1>Animation Demo Reel</h1>
           </div>
         </div>
@@ -61,25 +60,46 @@
     <div class="container container-section">
       <div class="row">
         <div class="col-md-7">
-          <h2>Mounir Boumaza</h2>
-          <p>Short artist description here.</p>
+          <div>
+            <h2>Mounir Boumaza</h2>
+            <p>
+              For commissions and project inquiries, please email:
+              <br>
+            </p>
+            <a href="mailto:mounir.boumaza.art@gmail.com">mounir.boumaza.art@gmail.com</a>
+          </div>
         </div>
+
         <div class="col-md-5">
           <form id="contact-form">
             <h2>Contact</h2>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="First Name">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="custom-form-control">
+                  <input type="text" class="form-control" placeholder="First Name">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="custom-form-control">
+                  <input type="text" class="form-control" placeholder="Last Name">
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Last Name">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="custom-form-control">
+                  <input type="email" class="form-control" placeholder="Email*" required>
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-              <input type="email" class="form-control" placeholder="Email*" required>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="custom-form-control">
+                  <textarea class="form-control" rows="4" placeholder="Write a message*" required></textarea>
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-              <textarea class="form-control" rows="4" placeholder="Write a message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-primary" id="sendEmailBtn">Submit</button>
           </form>
         </div>
       </div>
@@ -95,7 +115,7 @@
         </div>
       </div>
     </section>
-    
+
   </section>
 
   <section id="moonlight" class="moonlight-section">

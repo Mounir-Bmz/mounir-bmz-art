@@ -117,8 +117,7 @@ h1, h2, h3{
 }
 
 .container-section{
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 4rem;
   height: 70vh;
   color: #071F4E;
 }
@@ -152,6 +151,33 @@ h1, h2, h3{
   border: none!important;
   border-radius: 15px!important;
   padding: 0.7rem 2rem!important;
+}
+
+.bloc{
+  padding: 0 3rem!important;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* Styles pour tablette */
+  .bloc{
+    padding: 0 1rem!important;
+  }
+}
+
+@media (max-width: 505px) {
+  .message-text, .bloc h2{
+    font-size: 1.5rem!important;
+  }
+
+  .bloc p{
+    font-size: 0.8rem!important;
+  }
+}
+
+.bloc a{
+  color: #536083!important;
+  text-decoration:underline;
 }
 
 /* SECTION MESSAGE */

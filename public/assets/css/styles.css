@@ -1,0 +1,236 @@
+/* NAVBAR */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #D0CBDC!important;
+  color: aliceblue!important;
+}
+
+h1, h2, h3{
+  font-weight: bold!important;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar a {
+  color: aliceblue!important;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* .navbar-brand {
+  margin: 0.3rem !important;
+  padding: 0 !important;
+} */
+
+.navbar-logo img{
+  max-width: 38px;
+}
+
+.nav-item{
+  margin : 0 2rem;
+}
+
+/* Logo navbar */
+
+.navbar {
+  position: relative;
+}
+
+.navbar-logo {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+}
+
+.navbar-social {
+  position: absolute;
+  top: 4px;
+  right: 25px;
+  font-size: 2rem;
+}
+
+.navbar-social a {
+  margin: 0 1rem;
+}
+
+@media (max-width: 499px) {
+  .navbar-social a {
+    font-size: 1.7rem;
+    margin: 0 0.2rem;
+  }
+}
+
+
+/* SECTION HOME */
+
+.home-section {
+  background-image: url('../images/background_art.jpg');
+  background-size: cover;
+  background-position: right center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* .mainContent{
+  margin-top: 2rem;
+} */
+
+.video-container iframe {
+  width: 960px;
+  /* height: 540px; */
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* taille video vimeo */
+
+@media (max-width: 499px) {
+  .home-section h1, .home-section h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+
+  /* Styles pour téléphone */
+  .video-container iframe {
+    height: 320px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* Styles pour tablette */
+  .video-container iframe {
+    height: 420px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  /* Styles pour PC */
+  .video-container iframe {
+    height: 540px;
+  }
+
+  .title_reel h1, .title_reel h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* SECTION ABOUT */
+
+.about-section {
+  height: 100vh;
+}
+
+.banner-section{
+  height: 6.7vh;
+  background-image: url('../images/background_art.jpg');
+  background-size: cover;
+  background-position: right center;
+  background-attachment: fixed;
+}
+
+.container-section{
+  height: 66.3vh;
+  color: #071F4E;
+  margin: 0!important;
+  max-width: none!important;
+}
+
+.container-section .row{
+  height: 100%;
+}
+
+.blocImg{
+  background-image: url('../images/background_art.jpg');
+  background-size: cover;
+}
+
+.bloc{
+  padding: 0rem 5rem!important;
+  font-size: 0.8rem;
+}
+
+.bloc h2{
+  font-size: 1.5rem!important;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* Styles pour tablette */
+  .bloc{
+    padding: 0 4rem!important;
+  }
+}
+
+@media (max-width: 505px) {
+  .message-text, .bloc h2{
+    font-size: 1rem!important;
+  }
+
+  .bloc p{
+    font-size: 0.6rem!important;
+  }
+}
+
+.bloc a{
+  color: #536083!important;
+  text-decoration:underline;
+}
+
+/* SECTION MESSAGE */
+
+.message-section {
+  position: relative;
+  height: 27vh;
+  overflow: hidden; /* Empêche le flou de déborder de la section */
+  color: #E4A193;
+}
+
+.background-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/background_art.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: blur(30px);
+  z-index: -1;
+}
+
+.container-message{
+  width: 100%;
+  height: 100%;
+}
+
+.message-text{
+  font-size: 2.2rem;
+}
+
+/* SECTION MOONLIGHT */
+
+.moonlight-section {
+  color: #071F4E;
+  background-color: #FFFFFF;
+  height: 100vh;
+}

@@ -29,8 +29,8 @@ h1, h2, h3{
   padding: 0 !important;
 } */
 
-.navbar-logo img {
-  max-width: 64px;
+.navbar-logo img{
+  max-width: 38px;
 }
 
 .nav-item{
@@ -46,8 +46,27 @@ h1, h2, h3{
 .navbar-logo {
   position: absolute;
   top: 10px;
-  left: 20px;
+  left: 25px;
 }
+
+.navbar-social {
+  position: absolute;
+  top: 4px;
+  right: 25px;
+  font-size: 2rem;
+}
+
+.navbar-social a {
+  margin: 0 1rem;
+}
+
+@media (max-width: 499px) {
+  .navbar-social a {
+    font-size: 1.7rem;
+    margin: 0 0.2rem;
+  }
+}
+
 
 /* SECTION HOME */
 

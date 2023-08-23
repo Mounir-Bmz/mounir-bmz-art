@@ -7,4 +7,4 @@ var feed = new Instafeed({
   template: '<div class="instagram-image"><a href="{{link}}" target="_blank"><img src="{{image}}" alt="{{caption}}"></a></div>'
 });
 
-feed.run();
+// feed.run();

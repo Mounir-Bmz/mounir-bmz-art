@@ -133,9 +133,9 @@ h1, h2, h3{
   }
 }
 
-/* SECTION CONTACT */
+/* SECTION ABOUT */
 
-.contact-section {
+.about-section {
   height: 100vh;
 }
 
@@ -225,4 +225,12 @@ h1, h2, h3{
 
 .message-text{
   font-size: 2.2rem;
+}
+
+/* SECTION MOONLIGHT */
+
+.moonlight-section {
+  color: #071F4E;
+  background-color: #FFFFFF;
+  height: 100vh;
 }

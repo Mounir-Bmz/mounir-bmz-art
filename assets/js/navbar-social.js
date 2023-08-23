@@ -10,7 +10,7 @@ $(document).ready(function() {
     if (scrollTop >= moonlightSectionOffset) {
       
       // Changer le src de l'image du logo
-      navbarLogo.find("img").attr("src", "./public/assets/images/moonlight.png");
+      navbarLogo.find("img").attr("src", "./assets/images/moonlight.png");
 
       // Affiche le contenu pour la partie Moonlight
       navbarSocial.html(`
@@ -26,7 +26,7 @@ $(document).ready(function() {
       `);
     } else {
       // Changer le src de l'image du logo à son état par défaut
-      navbarLogo.find("img").attr("src", "./public/assets/images/mounir_bmz.png");
+      navbarLogo.find("img").attr("src", "./assets/images/mounir_bmz.png");
 
       // Afficher le contenu par défaut (logo Vimeo)
       navbarSocial.html(`

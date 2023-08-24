@@ -7,6 +7,7 @@ html {
 body {
   background-color: #D0CBDC!important;
   color: aliceblue!important;
+  font-family: 'Amaranth'!important;
 }
 
 h1, h2, h3{
@@ -35,6 +36,10 @@ h1, h2, h3{
 
 .nav-item{
   margin : 0 2rem;
+}
+
+.fas, .far, .fab{
+  width: 32px;
 }
 
 /* Logo navbar */
@@ -159,8 +164,10 @@ h1, h2, h3{
 }
 
 .blocImg{
-  background-image: url('../images/background_art.jpg');
-  background-size: cover;
+  background-image: url('../images/mounir_animation.gif');
+  background-size:auto;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .bloc{
@@ -178,9 +185,13 @@ h1, h2, h3{
   .bloc{
     padding: 0 4rem!important;
   }
+
+  .message-text, .bloc h2{
+    font-size: 1.5rem!important;
+  }
 }
 
-@media (max-width: 505px) {
+@media (max-width: 767px) {
   .message-text, .bloc h2{
     font-size: 1rem!important;
   }
@@ -193,6 +204,7 @@ h1, h2, h3{
 .bloc a{
   color: #536083!important;
   text-decoration:underline;
+  font-size: 1rem;
 }
 
 /* SECTION MESSAGE */
@@ -201,7 +213,7 @@ h1, h2, h3{
   position: relative;
   height: 27vh;
   overflow: hidden; /* Empêche le flou de déborder de la section */
-  color: #E4A193;
+  color: #ecab9e;
 }
 
 .background-blur {
@@ -223,10 +235,6 @@ h1, h2, h3{
   height: 100%;
 }
 
-.message-text{
-  font-size: 2.2rem;
-}
-
 /* SECTION MOONLIGHT */
 
 .moonlight-section {
@@ -239,27 +247,83 @@ h1, h2, h3{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 2rem;
+  margin: 2rem 0;
   max-width: 100%;
 }
 
 .instagram-media {
   width: calc(33.33%);
   min-width: inherit!important;
-  margin-top: 2rem;
 }
 
-@media (min-width: 992px) {
+/* Page grid */
 
-  /* Styles pour ordi */
-  .instagram-media {
-    max-width: 30%;
+.banner-section-insta{
+  height: 6.7vh;
+  background-color: white;
+}
+
+.follow-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.follow-content h3 {
+  margin: 0;
+}
+
+.follow-button {
+  display: flex;
+  align-items: center;
+}
+
+.follow-link .fab{
+  width: inherit;
+}
+
+.follow-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.follow-link:hover {
+  color: #5e5e5e;
+}
+
+.fab {
+  margin-right: 5px;
+}
+
+.follow-content h3 {
+  font-size: 1.3rem!important;
+  color: #333;
+}
+
+.moonlight-section-div {
+  max-width: 70%;
+  align-items: center; /* Centrer verticalement */
+  margin: 0 auto; /* Centrer horizontalement */
+}
+
+/* titre grid */
+@media (max-width: 400px){
+
+  /* Styles pour tel */
+
+  .follow-content h3 {
+    font-size: 0.9rem!important;
   }
 
-  .instagram-grid {
-    max-width: 70%;
-    display: flex;
-    align-items: center; /* Centrer verticalement */
-    margin: 0 auto; /* Centrer horizontalement */
+  .follow-link {
+    font-size: 0.7rem!important;
+    padding: 5px;
   }
 }

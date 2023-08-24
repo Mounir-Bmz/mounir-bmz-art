@@ -30,6 +30,9 @@ $(document).ready(function() {
 
       // Afficher le contenu par défaut (logo Vimeo)
       navbarSocial.html(`
+        <a href="mailto:mounir.boumaza.art@gmail.com">
+          <i class="far fa-envelope"></i>
+        </a>
         <a href="https://vimeo.com/mounirboumaza" target="_blank">
           <i class="fab fa-vimeo"></i>
         </a>
